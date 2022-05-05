@@ -6,10 +6,11 @@
       "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "externalDependencies": "none",
+        "generatePackageJson": true,
         "outputPath": "dist/apps/branches-api",
         "main": "apps/branches-api/src/main.ts",
-        "tsConfig": "apps/branches-api/tsconfig.app.json",
-        "assets": ["apps/branches-api/src/assets"]
+        "tsConfig": "apps/branches-api/tsconfig.app.json"
       },
       "configurations": {
         "production": {
